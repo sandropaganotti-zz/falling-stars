@@ -14,7 +14,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '7a7a28e4933343859f0ec1f0907a806a'; // Your client id
 var client_secret = 'edd12cd421404f49a05e656b233cacb6'; // Your client secret
-var redirect_uri = 'http:// fallingstars–sp.rhcloud.com/callback'; // Your redirect uri
+var redirect_uri = 'http:// fallingstars–sandropaganotti.rhcloud.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
