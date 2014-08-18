@@ -9,43 +9,45 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/app.css">
   </head>
   <body>
-    <div class="intro">
-      <h1 class="intro-title">Falling Stars</h1>
-      <p class="intro-paragraph">
-        Falling Stars helps you find whose singers who have had only one 
-        big hit during their career and create a Spotify playlist 
-        from those songs.
-      </p>
-    </div>
-
-    <div class="login">
-      To create your playlist first log in with Spotify
-      <a class="login-link" href="/login">Log in with Spotify</a>
-    </div>
-
-    <div class="console loggedin">
-      Welcome <span data-user-name></span>, to begin the search write the name of
-      an artist you like and press the button.
-      <div class="search">
-        <input class="console-artist" placeholder="eg: Michael Jackson" id="console-artist">
-        <a class="console-link" id="console-begin">Begin the search</a>
+    <div class="container">
+      <div class="intro">
+        <h1 class="intro-title">Falling Stars</h1>
+        <p class="intro-paragraph">
+          Falling Stars helps you find whose singers who have had only one 
+          big hit during their career and create a Spotify playlist 
+          from those songs.
+        </p>
       </div>
-      <div class="console-searching searching" id="console-search">
-        Search has begun, below you can see the progress while generating a 10-songs
-        playlist from the initial artist you picked.
-      </div>
-    </div>
 
-    <div class="summary">
-      Done! A new private playlist called <span data-playlist-name></span> has been 
-      automatically added to your spotify account.
-      <a class="summary-link" href="/">Create a new playlist</a>
-    </div>
-
-    <div class="current searching">
-      <div class="current-artist" id="current-artist">
+      <div class="login">
+        To create your playlist first log in with Spotify
+        <a class="login-link" href="/login">Log in with Spotify</a>
       </div>
-      <div id="current-search"></div>
+
+      <div class="console loggedin">
+        Welcome <span data-user-name></span>, to begin the search write the name of
+        an artist you like and press the button.
+        <div class="search">
+          <input class="console-artist" placeholder="eg: Michael Jackson" id="console-artist">
+          <a class="console-link" id="console-begin">Begin the search</a>
+        </div>
+        <div class="console-searching searching" id="console-search">
+          Search has begun, below you can see the progress while generating a 10-songs
+          playlist from the initial artist you picked.
+        </div>
+      </div>
+
+      <div class="summary">
+        Done! A new private playlist called <span data-playlist-name></span> has been 
+        automatically added to your spotify account.
+        <a class="summary-link" href="/">Create a new playlist</a>
+      </div>
+
+      <div class="current searching">
+        <div class="current-artist" id="current-artist">
+        </div>
+        <div id="current-search"></div>
+      </div>
     </div>
 
     <div class="footer">

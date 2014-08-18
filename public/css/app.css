@@ -9,6 +9,7 @@ html{
 a{
   text-decoration: none;
 }
+
 .intro{
   padding: 1.5rem 0;
   background-color: #74AC50;
@@ -97,15 +98,13 @@ a{
 }
 
 .footer{
-  position: absolute;
-  bottom: 0;
-  background-color: #74AC50;
+  margin-top: 4rem;
   width: 100%;
   font-size: 0.7rem;
-  color: #FFFFFF;
-  line-height: 1.5rem;
+  color: #cccccc;
 }
+
 .footer a{
-  color: #FFFFFF;
+  color: #cccccc;
   text-decoration: underline;
 }
