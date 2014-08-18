@@ -1,0 +1,111 @@
+.login, .loggedin, .searching, .summary{
+  display: none;
+}
+
+html{
+  font-family: sans-serif;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.intro{
+  padding: 1.5rem 0;
+  background-color: #74AC50;
+  color: #FFFFFF;
+}
+.intro-title{
+  padding-bottom: 1rem;
+  font-family: 'Alex Brush', cursive;
+  font-size: 4rem;
+}
+.intro-paragraph{
+  font-size: 0.9rem;
+  max-width: 30rem;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+.login, .console, .current, .summary{
+  margin: 1.5rem auto;
+  max-width: 30rem;
+  line-height: 1.2;
+}
+.login-link,.console-link, .summary-link{
+  display: block;
+  max-width: 15rem;
+  margin: 1rem auto 0 auto;
+  background: #74AC50;
+  color: #FFFFFF;
+  line-height: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.console-artist{
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid #74AC50;
+  color: #74AC50;
+  padding: 1rem;
+  font-size: 1.5rem;
+  outline: none;
+}
+.console-artist::-webkit-input-placeholder {
+  color: #74AC50;
+}
+.console-artist::-moz-placeholder {
+  color: #74AC50; 
+}
+.console-artist:-ms-input-placeholder {  
+  color: #74AC50;
+}
+.console-searching{
+  margin-top: 1rem;
+}
+
+.current{
+  border-top: 1px solid #cccccc;
+}
+.current-artist{
+  padding:  1rem;
+  color: #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+.current-result{
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: left;
+  padding: 0.5rem 4rem;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+.current-result span{
+  font-size: 0.6em;
+  line-height: 1;
+  display: block;
+  color: #93C274;
+}
+.current-result p{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #74AC50;
+  width: 100%;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  line-height: 1.5rem;
+}
+.footer a{
+  color: #FFFFFF;
+  text-decoration: underline;
+}
