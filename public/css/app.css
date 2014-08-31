@@ -97,6 +97,24 @@ a{
   text-overflow: ellipsis;
 }
 
+.advanced div{
+  display: inline-block;;
+  width: 33%;
+  font-size: 0.8rem;
+}
+
+.advanced-input{
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  border: 1px solid #74AC50;
+  color: #74AC50;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  outline: none;
+  width: 4rem;
+}
+
 .footer{
   margin-top: 4rem;
   width: 100%;

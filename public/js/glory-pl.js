@@ -1,4 +1,4 @@
-var GloryPL = function(access_token, userId, limit, country){
+var GloryPL = function(access_token, userId, limit, popmax, popmin, country){
   this.access_token = access_token;
   this.limit = limit || 5;
   this.country = country || 'GB';
@@ -8,8 +8,8 @@ var GloryPL = function(access_token, userId, limit, country){
   this.playlist = [];
   this.baseAPI = 'https://api.spotify.com/v1';
   this.thresold = {
-    popular: 50,
-    unpopular: 40
+    popular: popmax || 50,
+    unpopular: popmin || 40
   }
 }
 

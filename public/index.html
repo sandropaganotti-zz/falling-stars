@@ -29,10 +29,23 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         an artist you like and press the button.
         <div class="search">
           <input class="console-artist" placeholder="eg: Michael Jackson" id="console-artist">
+          <div class="advanced">
+            <div>
+              <small>popularity of<br/> the best song (1-100)</small>
+              <input class="advanced-input" id="popmax" value="50">
+            </div><div>
+              <small>popularity of all<br/> the other songs (1-100)</small>
+               <input class="advanced-input" id="popmin" value="40">
+            </div><div>
+              <small>number of<br/> results</small>
+              <input class="advanced-input" id="results" value="10">
+            </div>
+          </div>
+
           <a class="console-link" id="console-begin">Begin the search</a>
         </div>
         <div class="console-searching searching" id="console-search">
-          Search has begun, below you can see the progress while generating a 10-songs
+          Search has begun, below you can see the progress while generating a <span data-results></span>-songs
           playlist from the initial artist you picked.
         </div>
       </div>
@@ -105,7 +118,14 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
           $('#console-begin').on('click', function(){
             $('.search').hide();
             $('.searching').show();
-            (new GloryPL(access_token, userId)).init($('#console-artist').val());
+            $('[data-results]').text($('#results').val());
+            (new GloryPL(
+              access_token, 
+              userId,
+              parseInt($('#results').val(),10),
+              parseInt($('#popmax').val(),10),
+              parseInt($('#popmin').val(),10)
+            )).init($('#console-artist').val());
           });
 
           $(document).on('artist', function(evt){
